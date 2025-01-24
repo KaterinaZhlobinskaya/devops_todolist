@@ -4,7 +4,7 @@ FROM python:${pythonVersion} as base
 
 WORKDIR /devops_todolist
 
-COPY . .
+COPY . /devops_todolist
 
 FROM python:${pythonVersion}-slim AS run
 
@@ -12,7 +12,7 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /devops_todolist
 
-COPY --from=base /devops_todolist .
+COPY --from=base /devops_todolist /devops_todolist
 
 RUN pip install --upgrade pip
 

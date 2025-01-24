@@ -40,7 +40,7 @@ Before proceeding, ensure you have the following installed on your system: Docke
     1) Pull the Docker image:
       - docker pull zhlobinskakateryna/todoapp:1.0.0
     2) Run the container:
-      - docker run -d -p 8080:8080 --name todoapp zhlobinskakateryna/todoapp:1.0.0
+      - docker run -d -p 8080:8080 --name todoapp todoapp:1.0.0
 
 * Access the application at:
   - http://localhost:8080/
